@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisângela Betina Mallmann Cardoso - Sobre mim</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Arial sem serifa */
+            background-color: #f9f9f9; /* Cor de fundo clara */
+        }
+
+        .container {
+            display: flex; /* Usando flexbox para layout */
+            justify-content: space-between; /* Espaço entre as duas seções */
+            padding: 20px; /* Espaçamento ao redor da seção */
+        }
+
+        .left-section {
+            font-size: 15px;
+            padding: 20px; /* Espaçamento interno da caixa */
+            width: 30%; /* Largura da seção esquerda */
+            text-align: center;            
+        }
+
+        .right-section {
+            width: 70%; /* Largura da seção direita */
+            padding: 50px;
+            background-color: #E3F4F9; /* Fundo claro que complementa a paleta */
+        }
+
+        img {
+            max-width: 100%; /* Garante que a imagem não ultrapasse a largura da caixa */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            text-align: left; /* Alinhamento à esquerda */
+            background-color: #5AA5C5; /* Fundo azul que combina com a paleta */
+            color: white; /* Cor do texto em branco para contraste */
+            padding: 10px; /* Espaçamento interno para o título */
+            border-radius: 5px; /* Bordas arredondadas */
+            margin-bottom: 20px; /* Espaçamento abaixo do título */
+        }
+        
+        header {
+            display: flex; /* Usando flexbox */
+            flex-direction: column; /* Itens em coluna */
+            align-items: center; /* Centraliza horizontalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            padding: 20px;
+            background-color: #5AA5C5;
+            color: aliceblue;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px dotted #D1E3F0; /* Linha pontilhada e cor clara para combinar com o esquema de cores */
+            width: 50%; /* Linha ocupa metade da largura */
+            margin: 15px 0; /* Espaço ao redor da linha */
+        }
+
+        .menu {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            background-color: #f1f1f1; 
+        }
+                
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, li a.active {
+            background-color: #1f1e8ba2; /* Cor de fundo quando ativo ou hover */
+            color: white;
+        }
+
+        footer {
+            background-color: #3A7D99; /* Tonalidade mais escura de azul */
+            color: white; /* Texto em branco para contraste */
+            text-align: center; /* Centraliza o conteúdo */
+            padding: 15px; /* Espaçamento interno */
+            margin-top: 20px; /* Espaçamento superior para separar do conteúdo principal */
+        }
+
+        .sobre-mim {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            text-indent: 0; /* Remove a indentação dos parágrafos */
+            margin: 0; /* Remove qualquer margem adicional */
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Coloca as seções em coluna */
+                align-items: center; /* Centraliza os itens */
+            }
+
+            .left-section, .right-section {
+                width: 100%; /* Largura total em telas menores */
+                padding: 20px; /* Ajusta o preenchimento */
+            }
+
+            h3 {
+                font-size: 1.5em; /* Tamanho da fonte menor */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .left-section img {
+                width: 80%; /* Imagem ocupa 80% da largura em telas muito pequenas */
+            }
+
+            h3 {
+                font-size: 1.2em; /* Tamanho da fonte ainda menor */
+            }
+
+            .left-section {
+                font-size: 14px; /* Reduz o tamanho da fonte */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mallmann Insights Administrativos</h1>
+    </header>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html" class="active">Sobre mim</a></li> <!-- Item ativo -->
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portfólio</a></li> 
+            <li><a href="contato.html">Contato</a></li> 
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="left-section">
+            <img src="Imagens/elisangela.png" alt="Elisângela Betina Mallmann Cardoso">
+            <p><b>Elisângela Betina Mallmann Cardoso</b></p>
+            <p>29 anos</p>
+            <p>Lajeado/ RS</p>
+        </div>
+
+        <div class="right-section">
+            <h3>Sobre mim:</h3>
+                <div class="sobre-mim">
+                    <p>Olá, sou Elisângela Betina Mallmann Cardoso, mas pode me chamar de Betina. Tenho 29 anos e sou natural de Lajeado, no Rio Grande do Sul. Desde cedo, percebi minha afinidade com o universo administrativo, iniciando minha jornada profissional aos 15 anos como jovem aprendiz no Senac. Foi ali, durante um estágio de 8 meses na Construtora Giovanella, que tive meu primeiro contato com a área administrativa, e isso moldou minha carreira desde então.</p>
+                    <p>Ao terminar o curso e o estágio, mergulhei no mercado de trabalho, acumulando experiências valiosas como estagiária em diferentes setores. Trabalhei em uma empresa de comercialização de produtos em conserva e, depois, em uma concessionária Fiat na minha cidade, onde fui efetivada após 12 meses. Permaneci nessa concessionária por 4 anos, atuando como Líder de CRM e Líder de Qualidade, funções que me proporcionaram um vasto aprendizado e a oportunidade de liderar projetos significativos.</p>
+                    <p>Minha trajetória também inclui passagens por empresas de importação e exportação, produtos automotivos e assistência técnica de motocicletas da Yamaha, onde desempenhei diversas funções administrativas. Cada uma dessas experiências contribuiu para o meu desenvolvimento profissional, permitindo-me adquirir conhecimentos valiosos em diferentes áreas.</p>
+                    <p>Após alguns anos, retornei à concessionária Fiat, onde atuo há quase 7 anos. Durante toda a minha carreira, sempre busquei me manter atualizada, investindo em cursos profissionalizantes, aprimoramento de habilidades e conhecimentos, além de cursos técnicos e de graduação.</p>
+                    <p>Foi ao longo dessa caminhada que descobri uma paixão latente: a análise de dados. Embora essa área tenha feito parte da minha trajetória por anos, apenas recentemente percebi o quanto me fascinava gerar insights e informações com base em relatórios. Com isso em mente, decidi aprofundar meus conhecimentos em Power BI, SQL e iniciei minha graduação em Ciência de Dados.</p>
+                    <p>Mesmo ainda em formação, já recebi feedbacks positivos da diretoria e de outras áreas, destacando como meus relatórios têm auxiliado na tomada de decisões de forma clara e concisa. Ao elaborar cada relatório, coloco-me no lugar do destinatário, focando na experiência de leitura e na clareza das informações apresentadas.</p>
+                    <p>Minha jornada não para por aqui. Após concluir a graduação, pretendo me especializar em Business Intelligence para poder aplicar meus conhecimentos em administração, marketing, processos gerenciais, qualidade e ciência de dados, ajudando empresas a alcançar seus objetivos com insights estratégicos e eficazes.</p>
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Elisângela Betina Mallmann Cardoso. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisângela Betina Mallmann Cardoso - Portfólio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .center-section {
+            padding: 50px;
+            background-color: #E3F4F9;
+        }
+
+        h3 {
+            text-align: left;
+            background-color: #5AA5C5;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        h4 {
+            padding: 10px;
+            text-align: left;
+            background-color: #74a8bece;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #5AA5C5;
+            color: aliceblue;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, li a.active {
+            background-color: #1f1e8ba2;
+            color: white;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .image-container div {
+            flex: 1;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer; /* Muda o cursor para indicar que a imagem é clicável */
+        }
+
+        footer {
+            background-color: #3A7D99;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .publi {
+            margin-left: 30px;
+        }
+
+        .btn-container {
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+
+        .pdf-btn {
+            background-color: #5AA5C5;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .pdf-btn:hover {
+            background-color: #3A7D99;
+        }
+
+        /* Estilos para o lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+    </style>
+    <script>
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = src;
+            lightbox.style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('.image-container img');
+            images.forEach(image => {
+                image.addEventListener('click', function() {
+                    openLightbox(this.src);
+                });
+            });
+
+            document.getElementById('lightbox').addEventListener('click', closeLightbox);
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Mallmann Insights Administrativos</h1>
+    </header>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html" class="active">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li> 
+        </ul>
+    </nav>
+    
+    <div class="center-section">
+        <h3>Portfólio:</h3>
+        <h4>Dashboards em Microsoft Power BI</h4>
+
+        <div class="image-container">
+            <div>
+                <strong>Dashboard Comercial</strong>
+                <img src="Imagens/dashboard comercial.png" alt="Dashboard comercial">
+            </div>
+            <div>
+                <strong>Dashboard Financeiro</strong>
+                <img src="Imagens/dashboard financeiro.png" alt="Dashboard financeiro">
+            </div>
+            <div>
+                <strong>Dashboard Produto</strong>
+                <img src="Imagens/dashboard produto.png" alt="Dashboard produto">
+            </div>
+        </div>
+
+        <h4>Dashboards em Excel</h4>
+
+        <div class="image-container">
+            <div>
+                <strong>Dashboard de Vendas</strong>
+                <img src="Imagens/relatório de vendas - excel.png" alt="Dashboard de Vendas">
+            </div>
+        </div>
+
+        <h4>Plano de Marketing</h4>
+        <div class="publi">
+            <strong>Publicação:</strong><a href="https://periodicos.ifsul.edu.br/index.php/labsiga/article/view/3333/2235" target="_blank" onclick="openLinkedIn()">Elaboração de um Plano de Marketing para o Atelier Maga Weiand Costura Criativa</a>
+        </div>
+
+        <div class="btn-container">
+            <button class="pdf-btn" onclick="window.open('PDF/Apresentação Atelier Maga Weiand Costura Criativa.pdf', '_blank')">Ver apresentação Atelier Maga Weiand Costura Criativa</button>
+        </div>
+
+        <p><!-- Aqui você pode começar a adicionar o conteúdo do portfólio --></p>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-image" src="" alt="Expanded image">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Elisângela Betina Mallmann Cardoso. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

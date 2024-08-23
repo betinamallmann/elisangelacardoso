@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisângela Betina Mallmann Cardoso - Contato</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Arial sem serifa */
+            background-color: #f9f9f9; /* Cor de fundo clara */
+        }
+
+        .center-section {
+            padding: 50px;
+            background-color: #E3F4F9; /* Fundo claro que complementa a paleta */
+        }
+
+        h3 {
+            text-align: left;
+            background-color: #5AA5C5; /* Fundo azul que combina com a paleta */
+            color: white; /* Cor do texto em branco para contraste */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%; /* Largura total */
+        }
+
+        header {
+            display: flex; /* Usando flexbox */
+            flex-direction: column; /* Itens em coluna */
+            align-items: center; /* Centraliza horizontalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            padding: 20px;
+            background-color: #5AA5C5;
+            color: aliceblue;
+        }
+
+        .menu {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            background-color: #f1f1f1; 
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, li a.active {
+            background-color: #1f1e8ba2; /* Cor de fundo quando ativo ou hover */
+            color: white;
+        }
+
+        footer {
+            background-color: #3A7D99; /* Tonalidade mais escura de azul */
+            color: white; /* Texto em branco para contraste */
+            text-align: center; /* Centraliza o conteúdo */
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Estilo do formulário de contato */
+        .contact-form {
+            background-color: #E3F4F9; /* Fundo do formulário */
+            padding: 20px;
+            border-radius: 5px; /* Bordas arredondadas */
+            margin-top: 20px; /* Espaço acima do formulário */
+        }
+
+        label {
+            display: block; /* Faz o label ocupar toda a largura */
+            margin-bottom: 5px; /* Espaço abaixo do label */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%; /* Largura total */
+            padding: 10px; /* Preenchimento interno */
+            margin-bottom: 10px; /* Espaço abaixo dos campos */
+            border: 1px solid #ccc; /* Borda dos campos */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+
+        button {
+            background-color: #5AA5C5; /* Cor do botão */
+            color: white; /* Cor do texto do botão */
+            padding: 10px; /* Preenchimento interno */
+            border: none; /* Sem borda */
+            border-radius: 5px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+            width: 100%; /* Largura total do botão */
+        }
+
+        button:hover {
+            background-color: #1f1e8ba2; /* Cor do botão ao passar o mouse */
+        }
+
+        .contact-info {
+            margin: 20px 0; /* Espaço acima e abaixo */
+        }
+
+        .contact-info img {
+            width: 20px; /* Largura das imagens de contato */
+            height: 20px; /* Altura das imagens de contato */
+            vertical-align: middle; /* Alinha a imagem ao meio do texto */
+            margin-right: 10px; /* Espaço à direita da imagem */
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .center-section {
+                padding: 30px; /* Menos preenchimento em telas menores */
+            }
+
+            h3 {
+                font-size: 1.5em; /* Tamanho da fonte menor */
+            }
+
+            .contact-info {
+                font-size: 0.9em; /* Tamanho da fonte menor para informações de contato */
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                padding: 8px; /* Menos preenchimento interno nos campos */
+            }
+
+            button {
+                padding: 8px; /* Menos preenchimento interno no botão */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-info img {
+                width: 16px; /* Imagens menores em telas muito pequenas */
+                height: 16px;
+            }
+
+            h3 {
+                font-size: 1.2em; /* Tamanho da fonte ainda menor */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mallmann Insights Administrativos</h1>
+    </header>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portfólio</a></li>
+            <li><a href="contato.html" class="active">Contato</a></li> <!-- Item ativo -->
+        </ul>
+    </nav>
+    
+    <div class="center-section">
+        <h3>Contato:</h3>
+        <div class="contact-info">
+            <img src="Imagens/e-mail.png" alt="E-mail">
+            <span>E-mail: betinamallmann@hotmail.com</span>
+        </div>
+        <div class="contact-info">
+            <img src="Imagens/whatsapp.png" alt="WhatsApp">
+            <a href="https://wa.me/5551983418969" target="_blank">Telefone: (51) 9 8341-8969</a>
+        </div>
+        <div class="contact-info">
+            <img src="Imagens/linkedin.png" alt="LinkedIn">
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" onclick="openLinkedIn()">LinkedIn</a>
+        </div>
+
+        <h3>Solicitar contato:</h3>
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="button" onclick="sendContact()">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Elisângela Betina Mallmann Cardoso. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para lidar com o envio do formulário
+        function sendContact() {
+            // Exibe um alerta
+            alert("Solicitação de contato enviada!");
+            // Aqui você pode adicionar lógica para processar os dados do formulário, se necessário
+        }
+
+        // Função para abrir o LinkedIn em uma nova janela
+        function openLinkedIn() {
+            window.open("https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile", "_blank");
+        }
+    </script>
+
+</body>
+</html>
